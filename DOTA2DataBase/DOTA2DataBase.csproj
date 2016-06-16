@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4B92DA1-30D2-4558-813F-AAC1CF934FAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOTA2DataBase</RootNamespace>
+    <AssemblyName>DOTA2DataBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.2400\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VL.Common.Configurator, Version=1.1.5959.19934, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.Common.Configurator.1.1.1606151101.1\lib\net452\VL.Common.Configurator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VL.Common.DAS, Version=1.0.5947.27705, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.Common.DAS.1.0.1604131525.1\lib\net452\VL.Common.DAS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VL.Common.ORM, Version=1.0.6011.28538, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VL.Common.ORM.1.0.1606161551.1\lib\net452\VL.Common.ORM.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\DomainEntities\TEvent.cs" />
+    <Compile Include="Objects\DomainEntities\TEventReward.cs" />
+    <Compile Include="Objects\DomainEntities\THero.cs" />
+    <Compile Include="Objects\DomainEntities\TMatch.cs" />
+    <Compile Include="Objects\DomainEntities\TMatch_Team.cs" />
+    <Compile Include="Objects\DomainEntities\TPlayer.cs" />
+    <Compile Include="Objects\DomainEntities\TRound.cs" />
+    <Compile Include="Objects\DomainEntities\TRound_Team.cs" />
+    <Compile Include="Objects\DomainEntities\TRound_Team_Player.cs" />
+    <Compile Include="Objects\DomainEntities\TTeam.cs" />
+    <Compile Include="Objects\DomainEntities\TTeam_Player.cs" />
+    <Compile Include="Objects\DomainEntities\TUser.cs" />
+    <Compile Include="Objects\DomainEntities\TUserBasicInfo.cs" />
+    <Compile Include="Objects\Entities\TEventReward\TEventReward.cs" />
+    <Compile Include="Objects\Entities\TEventReward\TEventRewardFetcher.cs" />
+    <Compile Include="Objects\Entities\TEventReward\TEventRewardOperator.cs" />
+    <Compile Include="Objects\Entities\TEventReward\TEventRewardProperties.cs" />
+    <Compile Include="Objects\Entities\TEventReward\TEventRewardReference.cs" />
+    <Compile Include="Objects\Entities\TEvent\TEvent.cs" />
+    <Compile Include="Objects\Entities\TEvent\TEventFetcher.cs" />
+    <Compile Include="Objects\Entities\TEvent\TEventOperator.cs" />
+    <Compile Include="Objects\Entities\TEvent\TEventProperties.cs" />
+    <Compile Include="Objects\Entities\TEvent\TEventReference.cs" />
+    <Compile Include="Objects\Entities\THero\THero.cs" />
+    <Compile Include="Objects\Entities\THero\THeroOperator.cs" />
+    <Compile Include="Objects\Entities\THero\THeroProperties.cs" />
+    <Compile Include="Objects\Entities\TMatch\TMatch.cs" />
+    <Compile Include="Objects\Entities\TMatch\TMatchFetcher.cs" />
+    <Compile Include="Objects\Entities\TMatch\TMatchOperator.cs" />
+    <Compile Include="Objects\Entities\TMatch\TMatchProperties.cs" />
+    <Compile Include="Objects\Entities\TMatch\TMatchReference.cs" />
+    <Compile Include="Objects\Entities\TMatch_Team\TMatch_Team.cs" />
+    <Compile Include="Objects\Entities\TMatch_Team\TMatch_TeamFetcher.cs" />
+    <Compile Include="Objects\Entities\TMatch_Team\TMatch_TeamOperator.cs" />
+    <Compile Include="Objects\Entities\TMatch_Team\TMatch_TeamProperties.cs" />
+    <Compile Include="Objects\Entities\TMatch_Team\TMatch_TeamReference.cs" />
+    <Compile Include="Objects\Entities\TPlayer\TPlayer.cs" />
+    <Compile Include="Objects\Entities\TPlayer\TPlayerFetcher.cs" />
+    <Compile Include="Objects\Entities\TPlayer\TPlayerOperator.cs" />
+    <Compile Include="Objects\Entities\TPlayer\TPlayerProperties.cs" />
+    <Compile Include="Objects\Entities\TPlayer\TPlayerReference.cs" />
+    <Compile Include="Objects\Entities\TRound\TRound.cs" />
+    <Compile Include="Objects\Entities\TRound\TRoundFetcher.cs" />
+    <Compile Include="Objects\Entities\TRound\TRoundOperator.cs" />
+    <Compile Include="Objects\Entities\TRound\TRoundProperties.cs" />
+    <Compile Include="Objects\Entities\TRound\TRoundReference.cs" />
+    <Compile Include="Objects\Entities\TRound_Team\TRound_Team.cs" />
+    <Compile Include="Objects\Entities\TRound_Team\TRound_TeamFetcher.cs" />
+    <Compile Include="Objects\Entities\TRound_Team\TRound_TeamOperator.cs" />
+    <Compile Include="Objects\Entities\TRound_Team\TRound_TeamProperties.cs" />
+    <Compile Include="Objects\Entities\TRound_Team\TRound_TeamReference.cs" />
+    <Compile Include="Objects\Entities\TRound_Team_Player\TRound_Team_Player.cs" />
+    <Compile Include="Objects\Entities\TRound_Team_Player\TRound_Team_PlayerFetcher.cs" />
+    <Compile Include="Objects\Entities\TRound_Team_Player\TRound_Team_PlayerOperator.cs" />
+    <Compile Include="Objects\Entities\TRound_Team_Player\TRound_Team_PlayerProperties.cs" />
+    <Compile Include="Objects\Entities\TRound_Team_Player\TRound_Team_PlayerReference.cs" />
+    <Compile Include="Objects\Entities\TTeam\TTeam.cs" />
+    <Compile Include="Objects\Entities\TTeam\TTeamFetcher.cs" />
+    <Compile Include="Objects\Entities\TTeam\TTeamOperator.cs" />
+    <Compile Include="Objects\Entities\TTeam\TTeamProperties.cs" />
+    <Compile Include="Objects\Entities\TTeam\TTeamReference.cs" />
+    <Compile Include="Objects\Entities\TTeam_Player\TTeam_Player.cs" />
+    <Compile Include="Objects\Entities\TTeam_Player\TTeam_PlayerOperator.cs" />
+    <Compile Include="Objects\Entities\TTeam_Player\TTeam_PlayerProperties.cs" />
+    <Compile Include="Objects\Enums\ECourseType.cs" />
+    <Compile Include="Objects\Enums\EGender.cs" />
+    <Compile Include="Objects\Enums\ESample.cs" />
+    <Compile Include="Objects\Enums\ESide.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\Entities\TUserBasicInfo\" />
+    <Folder Include="Objects\Entities\TUser\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

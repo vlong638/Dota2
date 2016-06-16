@@ -1,0 +1,63 @@
+﻿<Window x:Class="DOTA2DataManager.DataCreator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DOTA2DataManager"
+        mc:Ignorable="d"
+        Title="DataCreator" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0" Style="{StaticResource TabControlNormal}">
+            <TabItem Header="战队录入" Style="{StaticResource TabItemNormal}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <StackPanel Style="{StaticResource StackPanelLine}">
+                            <TextBlock Style="{StaticResource StackPanelLine_TextBlock}" Text="战队名称:"/>
+                            <TextBox Style="{StaticResource StackPanelLine_TextBox}" Name="tb_TeamName"/>
+                        </StackPanel>
+                        <StackPanel Style="{StaticResource StackPanelLine}">
+                            <TextBlock Style="{StaticResource StackPanelLine_TextBlock}" Text="战队名称缩写:"/>
+                            <TextBox Style="{StaticResource StackPanelLine_TextBox}" Name="tb_TeamNameAbbr"/>
+                        </StackPanel>
+                        <StackPanel Style="{StaticResource StackPanelLine}">
+                            <TextBlock Style="{StaticResource StackPanelLine_TextBlock}" Text="MMR:"/>
+                            <TextBox Style="{StaticResource StackPanelLine_TextBox}" Name="tb_MMR"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel  Grid.Column="1">
+                        <Button Style="{StaticResource StackPanelLine_Button}" Content="录入" Click="AddTeam"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="选手录入" Style="{StaticResource TabItemNormal}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <StackPanel Style="{StaticResource StackPanelLine}">
+                            <TextBlock Style="{StaticResource StackPanelLine_TextBlock}" Text="选手名称:"/>
+                            <TextBox Style="{StaticResource StackPanelLine_TextBox}" Name="tb_PlayerName"/>
+                        </StackPanel>
+                        <StackPanel Style="{StaticResource StackPanelLine}">
+                            <TextBlock Style="{StaticResource StackPanelLine_TextBlock}" Text="选手名称缩写:"/>
+                            <TextBox Style="{StaticResource StackPanelLine_TextBox}" Name="tb_PlayerNameAbbr"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Button Style="{StaticResource StackPanelLine_Button}" Content="录入" Click="AddPlayer"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

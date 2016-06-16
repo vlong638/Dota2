@@ -1,0 +1,14 @@
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\DOTA2DataBase.dll.config
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\DOTA2DataBase.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\DOTA2DataBase.pdb
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\MySql.Data.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\Newtonsoft.Json.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\VL.Common.Configurator.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\VL.Common.DAS.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\VL.Common.ORM.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\Newtonsoft.Json.xml
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\bin\Debug\VL.Common.ORM.xml
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\obj\Debug\DOTA2DataBase.csprojResolveAssemblyReference.cache
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\obj\Debug\DOTA2DataBase.dll
+E:\WorkSpace\0.公用经验\MyCode\VL\Web\ASP.Net\WebAPI\战策分析器\DOTA2DataBase\obj\Debug\DOTA2DataBase.pdb
